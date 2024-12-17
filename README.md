@@ -6,4 +6,4 @@ You can check this out with
 <br>
 Link to the website: https://ritvikbhatia.github.io/LoveProject
 
-Big thanks to @ritvikbhatia
+Big thanks to [@ritvikbhatia](https://github.com/ritvikbhatia)
