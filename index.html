@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Это для моей Анелии!</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link rel="icon" href="heart.ico" type="image/x-icon" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">"""</span><br />
+			<span class="space"/><span class="comments">ЭТО МОЙ КОД ЛЮБВИ К ТЕБЕ</span><br />
+			<span class="comments">"""</span><br />
+			<br>
+			Жаным, привет !<br />
+			Ты помнишь день нашего первого знакомства?)<br />
+			<span class="comments"># 2 сентября 2024 года. </span><br />
+			С того самого дня в моей жизни появилась особенная искра...<br />
+			<span class="comments"># Твоё лицо, Твой голос, Твои слова.😍</span><br />
+			Всё твое отпечаталось в моем сердце.🩷<br />
+			Ты стала частью моего мира, и с каждым днём наша связь становилась только сильнее.😘<br />
+			Путь от влюбленности к любви.💝<br />
+			Мы прошли этот путь вместе, не торопясь,<br />
+			Просто наслаждаясь каждым мгновением рядом.🫶<br />
+			Были моменты лёгких недоразумений,<br />
+			<span class="comments"># И я думаю они еще будут)</span><br />
+			Но каждый из них только укрепил нашу связь.💞<br />
+			И вот, здесь и сейчас, я знаю, что это настоящее, искреннее чувство.💜<br />
+			<br>
+			Всё, что я хочу сказать тебе:<br />
+			Я буду любить тебя всегда!❤️<br />
+			<span class="comments"># Этот код не имеет срока годности, он вечно будет работать.</span><br />
+			<br>
+			Если ты хочешь почувствовать мою любовь...<br />
+			Просто нажми на это сердце ниже и знай, что я всегда рядом.<br />
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Люблю тебя до луны и обратно
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					Я тебя люблю!<br/>
+					<div class="signature">- Димаш</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2024, 8, 11);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
